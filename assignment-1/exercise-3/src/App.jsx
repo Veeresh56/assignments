@@ -1,7 +1,16 @@
 function App() {
-  const name = "Chowdary Veeresh";
+  const fruits = ["Apple", "Banana", "Mango"];
 
-  return <h1>Hello {name}</h1>;
+  return (
+    <div>
+      <h1>Fruit List</h1>
+      <ul>
+        {fruits.map((fruit, index) => (
+          <li key={index}><strong>{fruit}</strong></li>
+        ))}
+      </ul>
+    </div>
+  );
 }
 
 export default App;
